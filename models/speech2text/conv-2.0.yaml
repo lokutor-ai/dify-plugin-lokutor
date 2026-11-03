@@ -1,0 +1,7 @@
+model: conv-2.0
+label:
+  en_US: Conv 2.0
+model_type: speech2text
+model_properties:
+  file_upload_limit: 25
+  supported_file_extensions: wav

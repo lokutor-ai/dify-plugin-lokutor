@@ -1,0 +1,88 @@
+provider: lokutor
+label:
+  en_US: Lokutor
+description:
+  en_US: Lokutor's own speech models. Versa 2.0 turns text into speech and Conv 2.0 turns speech into text, in English, Spanish, Catalan, Galician, Basque, Portuguese, French, Italian and German.
+icon_small:
+  en_US: icon.svg
+icon_large:
+  en_US: icon.svg
+background: "#F3F4F6"
+help:
+  title:
+    en_US: Get your API key from Lokutor
+  url:
+    en_US: https://lokutor.com
+supported_model_types:
+  - tts
+  - speech2text
+configurate_methods:
+  - predefined-model
+provider_credential_schema:
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        en_US: Enter your Lokutor API key
+    - variable: base_url
+      label:
+        en_US: API Base URL
+      type: text-input
+      required: false
+      placeholder:
+        en_US: https://api.lokutor.com/v1 (default)
+    - variable: language
+      label:
+        en_US: Language
+      type: select
+      required: false
+      default: auto
+      options:
+        - value: auto
+          label:
+            en_US: Detect from the text or audio
+        - value: en
+          label:
+            en_US: English
+        - value: es
+          label:
+            en_US: Spanish
+        - value: ca
+          label:
+            en_US: Catalan
+        - value: gl
+          label:
+            en_US: Galician
+        - value: eu
+          label:
+            en_US: Basque
+        - value: pt
+          label:
+            en_US: Portuguese
+        - value: fr
+          label:
+            en_US: French
+        - value: it
+          label:
+            en_US: Italian
+        - value: de
+          label:
+            en_US: German
+models:
+  tts:
+    position: models/tts/_position.yaml
+    predefined:
+      - models/tts/*.yaml
+  speech2text:
+    position: models/speech2text/_position.yaml
+    predefined:
+      - models/speech2text/*.yaml
+extra:
+  python:
+    provider_source: provider/lokutor.py
+    model_sources:
+      - models/tts/tts.py
+      - models/speech2text/speech2text.py

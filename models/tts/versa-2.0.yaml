@@ -1,0 +1,39 @@
+model: versa-2.0
+label:
+  en_US: Versa 2.0
+model_type: tts
+model_properties:
+  default_voice: F1
+  voices:
+    - mode: F1
+      name: Female 1 (F1)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: F2
+      name: Female 2 (F2)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: F3
+      name: Female 3 (F3)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: F4
+      name: Female 4 (F4)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: F5
+      name: Female 5 (F5)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: M1
+      name: Male 1 (M1)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: M2
+      name: Male 2 (M2)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: M3
+      name: Male 3 (M3)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: M4
+      name: Male 4 (M4)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+    - mode: M5
+      name: Male 5 (M5)
+      language: [en-US, es-ES, ca-ES, gl-ES, eu-ES, pt-PT, fr-FR, it-IT, de-DE]
+  word_limit: 5000
+  audio_type: wav
